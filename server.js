@@ -77,8 +77,8 @@ app.get('/flights/:id', (req, res) => {
     }
 });
 
-app.get('/passports', (req, res) => {
-    res.json(reservationService.getPassengerPassports());
+app.get('/airports', (req, res) => {
+    res.json(reservationService.getAirports());
 });
 
 app.listen(3000, () => {
